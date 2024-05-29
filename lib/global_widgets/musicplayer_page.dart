@@ -2,6 +2,7 @@
 
 import 'dart:ui';
 
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:my_music_player/presentation/bottom_nav/bottom_nav.dart';
@@ -14,6 +15,8 @@ class MusicPlayer extends StatefulWidget {
 }
 
 class _MusicPlayerState extends State<MusicPlayer> {
+  // audioplay
+  AudioPlayer _player = AudioPlayer();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
